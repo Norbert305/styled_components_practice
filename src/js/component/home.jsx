@@ -1,25 +1,32 @@
 import React from "react";
+import { Container } from "./styled/Container.styled";
+import { Header } from "./Header";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./styled/Global";
 
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
+
+const theme = {
+	colors: {
+		header: "#ebfbff",
+		body: "#fff",
+		footer: "#003333",
+	},
+};
+
 const Home = () => {
 	return (
-		<div>
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
+		<ThemeProvider theme={theme}>
+			<div>
+				<GlobalStyles />
+				<Header />
+				<Container>
+					<h1>Hello World</h1>
+				</Container>
+			</div>
+		</ThemeProvider>
 	);
 };
 

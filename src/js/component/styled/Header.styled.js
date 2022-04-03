@@ -17,6 +17,21 @@ export const Nav = styled.nav`
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 40px;
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
 `;
 
-export const Logo = styled.img``;
+export const Logo = styled.img`
+	@media (max-width: 768px) {
+		margin-bottom: 40px;
+	}
+`;
+
+export const Image = styled.img`
+	width: 375px;
+	margin: 0 30px;
+	@media (max-width: 768px) {
+		margin: 20px auto;
+	}
+`;

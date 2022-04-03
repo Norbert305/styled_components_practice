@@ -9,6 +9,7 @@ curser: pointer;
 font-size: 16px;
 font-weight: 700;
 padding: 15px 60px;
+margin: 0 40px;
 background-color: ${({ bg }) => bg || "#fff"}
 background-color: ${({ color }) => color || "#333"}
 

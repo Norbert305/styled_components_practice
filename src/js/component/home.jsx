@@ -14,6 +14,7 @@ const theme = {
 		body: "#fff",
 		footer: "#003333",
 	},
+	mobile: "768px",
 };
 
 const Home = () => {
@@ -22,7 +23,7 @@ const Home = () => {
 			<div>
 				<GlobalStyles />
 				<Header />
-				<Container>
+				<Container className="text-center">
 					<h1>Hello World</h1>
 				</Container>
 			</div>

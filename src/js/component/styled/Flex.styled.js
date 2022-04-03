@@ -8,4 +8,9 @@ export const Flex = styled.div`
 	& > ul {
 		flex: 1;
 	}
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+		text-align: center;
+	}
 `;

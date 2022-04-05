@@ -3,6 +3,7 @@ import { Container } from "./styled/Container.styled";
 import { Header } from "./Header";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./styled/Global";
+import { TheNavBar } from "./TheNavBar";
 
 //include images into your bundle
 
@@ -21,6 +22,7 @@ const Home = () => {
 	return (
 		<ThemeProvider theme={theme}>
 			<div>
+				<TheNavBar />
 				<GlobalStyles />
 				<Header />
 				<Container className="text-center">
